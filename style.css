@@ -1,0 +1,138 @@
+body {
+  background-color: #fed7c9;
+}
+.logo {
+  border: none;
+  border-radius: 21px;
+  width: 350px;
+  height: 350px;
+  margin: 34px;
+}
+.Container {
+  display: flex;
+  justify-content: center;
+}
+.slogan {
+  font-family: "Italiana", sans-serif;
+  font-size: 48px;
+  color: #7d1c1c;
+  font-weight: 600;
+  text-align: center;
+}
+.LogInContainer {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 34px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.LogIn {
+  display: flex;
+  justify-content: center;
+}
+.LogInHeading {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #770909;
+  justify-content: center;
+  padding: 13px;
+  margin-bottom: 40px;
+}
+
+.EMailCreds {
+  position: relative;
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EMailCreds img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+}
+
+.E-Mail {
+  width: 100%;
+  height: 56px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  padding-left: 55px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  border: none;
+}
+.E-Mail::placeholder{
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+.PassCreds {
+  position: relative;
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PassCreds img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+}
+
+.Pass {
+  width: 100%;
+  height: 56px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  padding-left: 55px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  border: none;
+}
+.Pass::placeholder{
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+.credentials{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.BtnLogIn{
+  transition: 0.3s;
+  display: block;
+  background-color: #DD3535;
+  border-radius: 50px;
+  width: 245px;
+  height: 70px;
+  font-size: 42px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #FFF9F9;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 4px solid #d38585;
+}
+.LogInButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BtnLogIn:hover{
+  transition: 0.3s;
+  transform: scale(1.06);
+}
