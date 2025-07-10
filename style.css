@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 .background{
   position: fixed;
   z-index: -1;
@@ -118,6 +123,9 @@
     flex-direction: column;
     gap: 10px;
     
+}
+a{
+  text-decoration: none;
 }
 .BtnLogIn{
   transition: 0.3s;
