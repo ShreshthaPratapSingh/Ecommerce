@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fed7c9;
+  display: flex;
+  flex-direction: column;
+  gap: 71px;
+  overflow-x: hidden;
+}
+.header {
+  background-color: white;
+  height: 87px;
+  width: 100%;
+  margin-top: 49px;
+  position: relative;
+  display: flex;
+}
+.imageL {
+  position: absolute;
+  height: 183px;
+  width: 183px;
+  border-radius: 104.5px;
+  transform: translateY(-25%);
+  margin-left: 11px;
+}
+.searchButton {
+  width: 100%;
+  height: 56px;
+  border-radius: 20px;
+  background-color: #fed7c9;
+  padding-left: 55px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  border: none;
+}
+.searchBar {
+  position: relative;
+  width: 90%;
+  max-width: 451px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 452px;
+}
+.searchBar img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+}
+.searchButton::placeholder {
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  margin-left: 30vw;
+}
+.User {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.User:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.Heart {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.Heart:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.Shopping {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.Shopping:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.subHeader {
+  width: 100%;
+  height: 46px;
+  background-color: white;
+}
+.subHeader ul {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 250px;
+  height: 100%;
+  font-size: 36px;
+  font-family: "Italiana", sans-serif;
+  font-weight: 600;
+}
+.subHeader ul li {
+  cursor: pointer;
+}
+.subHeader ul li:hover {
+  text-decoration: underline;
+}
+#HomeTab {
+  color: red;
+}
+.category {
+  margin-left: 0.5vw;
+  border: 2px solid black;
+  height: 90vh;
+  width: 323px;
+  background-color: #f3c18e;
+}
+.CHead {
+  font-family: "Italiana", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px;
+}
+.TypeCat {
+  display: flex;
+  padding-left: 10px;
+  flex-direction: column;
+}
+.Tops {
+  padding-left: 10px;
+  font-size: 32px;
+  font-family: "GFS Neohellenic", sans-serif;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #f3c18e;
+}
+.gender {
+  font-family: "Italiana", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px;
+}
+.Gender {
+  display: flex;
+  gap: 20px;
+  padding-left: 10px;
+}
+.price,
+.colorH,
+.SizeH {
+  font-family: "Italiana", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px;
+}
+.Prices {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 10px;
+}
+.colorSector1 {
+  display: flex;
+  gap: 10px;
+}
+.colorSector2,
+.SizeSector1,
+.SizeSector2 {
+  display: flex;
+  gap: 10px;
+}
+.color,
+.Size {
+  padding-left: 10px;
+}
+.Page {
+  display: flex;
+  gap: 50px;
+}
+.productCard {
+  transition: 0.2s;
+  width: 310px;
+  height: 600px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+}
+.productCard:hover {
+  transition: 0.2s;
+  transform: scale(1.06);
+}
+.pdt1 {
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+}
+.content {
+  font-size: 28px;
+  font-family: "GFS Neohellenic", sans-serif;
+  padding: 5px;
+  font-weight: 600;
+}
+.originalP,
+.NewP,
+.discount {
+  font-size: 28px;
+  font-family: "GFS Neohellenic", sans-serif;
+  font-weight: 700;
+}
+.pricesSector {
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+}
+.originalP {
+  text-decoration: line-through;
+  color: gray;
+}
+.discount {
+  color: green;
+}
+.products {
+  max-height: 1000px;
+  max-width: 78vw;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 20px;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+.products::-webkit-scrollbar{
+  display: none;
+}
+.ATC,
+.BN {
+  transition: 0.1s;
+  width: 140px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  height: 40px;
+  font-size: 22px;
+  margin-top: 10px;
+  background-color: #e91e63;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.ATC:hover,
+.BN:hover {
+  transition: 0.1s;
+  transform: scale(1.06);
+}
+.buttonsSector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.imageSector {
+  position: relative;
+}
+.Rating {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  font-size: 22px;
+  height: 35px;
+  align-content: center;
+  font-family: "Italiana", sans-serif;
+  font-weight: 900;
+}
+.featuredPdts {
+  display: flex;
+  flex-direction: column;
+}
+.Featured {
+  font-family: "Italiana", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  padding: 20px;
+}
+.sloganF {
+  font-family: "Italiana", sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  text-align: center;
+  word-spacing: 80px;
+  width: 100vw;
+  height: 70px;
+  background-color: white;
+}
+
